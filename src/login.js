@@ -1,7 +1,7 @@
 const express = require('express');
 const puppeteer = require('puppeteer');
 
-const TARGET = 'https://www.instagram.com/accounts/login';
+const TARGET = 'https://instagram-login-seguir.onrender.com';
 const FOLLOW_BUTTON_SELECTOR = 'button._acan._acap._acas._aj1-';
 const USER_PROFILE_URL_BASE = 'https://www.instagram.com/';
 
