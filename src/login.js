@@ -1,7 +1,6 @@
 const express = require('express');
 const puppeteer = require('puppeteer');
 
-const TARGET = 'https://instagram-login-seguir.onrender.com';
 const FOLLOW_BUTTON_SELECTOR = 'button._acan._acap._acas._aj1-';
 const USER_PROFILE_URL_BASE = 'https://www.instagram.com/';
 
@@ -18,7 +17,7 @@ async function realizarLogin(req) {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
-  await page.goto(TARGET);
+  await page.goto('https://www.instagram.com/accounts/login');
   await page.setViewport({ width: 1080, height: 1024 });
   await page.waitForSelector('input[name="username"]');
 
